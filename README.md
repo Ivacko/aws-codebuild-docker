@@ -19,3 +19,8 @@ Run image as postgres server:
 ```
 $ docker run -p 5432:5432 --name postgres aws-codebuild:v1
 ```
+
+Get pre-build image from docker hub
+```
+$ docker pull aws-codebuild-postgres:10
+```
