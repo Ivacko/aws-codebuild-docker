@@ -94,7 +94,7 @@ VOLUME /var/lib/docker
 
 COPY dockerd-entrypoint.sh /usr/local/bin/
 
-ENV NODE_VERSION="8.12.0"
+ENV NODE_VERSION="10.16.3"
 
 RUN set -ex \
     && for key in \
