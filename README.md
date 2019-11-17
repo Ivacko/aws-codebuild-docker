@@ -22,7 +22,7 @@ $ docker run -p 5432:5432 --name postgres aws-codebuild:v1
 
 # Get prebuild image from docker hub
 ```
-$ docker pull ivacko/aws-codebuild-postgres
+$ docker pull ivacko/aws-codebuild
 ```
 
 # Run image on CodeBuild
