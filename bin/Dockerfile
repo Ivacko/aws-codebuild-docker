@@ -77,7 +77,6 @@ COPY ssh_config /root/.ssh/config
 COPY dockerd-entrypoint.sh /usr/local/bin/
 
 #****************      NODEJS     ****************************************************
-
  ENV N_SRC_DIR="$SRC_DIR/n"
 
  RUN git clone https://github.com/tj/n $N_SRC_DIR \
@@ -87,7 +86,6 @@ COPY dockerd-entrypoint.sh /usr/local/bin/
      && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
      && apt-get update && apt-get install -y --no-install-recommends yarn \
      && cd / && rm -rf $N_SRC_DIR;
-
 #****************      END NODEJS     ****************************************************
 
 #****************      POSTGRES     ****************************************************

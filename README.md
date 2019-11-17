@@ -1,6 +1,6 @@
 # AWS CodeBuild
 
-Ubuntu 14.04.5 docker image for AWS CodeBuild. Containing nodejs 8.11 and postgres 10.
+Ubuntu 18 docker image for AWS CodeBuild. Containing nodejs 10 and postgres 11.
 
 # Image build steps
 ```
@@ -20,7 +20,10 @@ Run image as postgres server:
 $ docker run -p 5432:5432 --name postgres aws-codebuild:v1
 ```
 
-Get pre-build image from docker hub
+# Get prebuild image from docker hub
 ```
 $ docker pull ivacko/aws-codebuild-postgres
 ```
+
+# Run image on CodeBuild
+The image have to be run with privileged mode enabled when used on CodeBuild.
